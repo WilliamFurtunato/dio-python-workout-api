@@ -6,6 +6,7 @@ from pydantic import UUID4
 from workout_api.atleta.schemas import (
     AtletaIn,
     AtletaOut,
+    AtletaOutCustom,
     AtletaUpdate,
 )
 from workout_api.atleta.models import AtletaModel
@@ -96,7 +97,7 @@ async def post(
     "/",
     summary="Consultar todos os Atletas",
     status_code=status.HTTP_200_OK,
-    response_model=list[AtletaOut],
+    response_model=list[AtletaOutCustom],
 )
 async def query(
     db_session: DatabaseDependency,
