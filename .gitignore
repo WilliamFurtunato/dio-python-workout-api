@@ -127,6 +127,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+workoutdir/
 
 # Spyder project settings
 .spyderproject
